@@ -1,0 +1,36 @@
+# Dependency directory
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Production build directory
+/dist
+
+# Editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# PM2 process file
+ecosystem.config.js
