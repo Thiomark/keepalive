@@ -1,9 +1,5 @@
-const express = require("express");
 const cron = require("node-cron");
 const axios = require("axios");
-
-const app = express();
-const port = 6336;
 
 // Define the keepalive function
 function keepAlive() {
@@ -19,12 +15,8 @@ function keepAlive() {
     });
 }
 
-// Schedule the task to run every 2 hours
-cron.schedule("0 */2 * * *", keepAlive, {
+// Schedule the task to run every 5 minutes
+cron.schedule("*/5 * * * *", keepAlive, {
   scheduled: true,
   timezone: "Africa/Johannesburg",
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
 });
