@@ -15,8 +15,8 @@ function keepAlive() {
     });
 }
 
-// Schedule the task to run every 5 minutes
-cron.schedule("*/5 * * * *", keepAlive, {
+// Schedule the task to run every 30 minutes
+cron.schedule("*/30 * * * *", keepAlive, {
   scheduled: true,
   timezone: "Africa/Johannesburg",
 });
